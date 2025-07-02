@@ -1,0 +1,96 @@
+.admin-container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.create-btn {
+  background-color: #2b6cb0;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.create-btn:hover {
+  background-color: #2c5282;
+}
+
+.event-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.event-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  border-left: 6px solid #4c51bf;
+  transition: all 0.3s ease;
+}
+
+.event-card h3 {
+  margin-top: 0;
+  color: #2d3748;
+}
+
+.event-card p {
+  margin: 0.5rem 0;
+  color: #4a5568;
+}
+
+.action-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.action-buttons button {
+  padding: 0.5rem 1rem;
+  font-size: 0.88rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #805ad5;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.view-btn {
+  background-color: #3182ce;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #6b46c1;
+}
+
+.delete-btn:hover {
+  background-color: #c53030;
+}
+
+.view-btn:hover {
+  background-color: #2b6cb0;
+}

@@ -1,0 +1,185 @@
+/* EventList.css */
+
+.event-wrapper {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+  background: linear-gradient(to right, #fdf4ff, #f0f9ff);
+  min-height: 100vh;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #4c1d95;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* ✅ Always 2 per row */
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* On mobile (<= 640px), show 1 card per row */
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.event-card-modern {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 320px; /* ✅ Consistent small card */
+  overflow: hidden;
+  position: relative;
+}
+
+.event-card-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+}
+
+.event-card-modern h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #1e293b;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-card-modern p {
+  font-size: 0.85rem;
+  margin: 0.3rem 0;
+  color: #475569;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-book,
+.btn-pay,
+.btn-cancel {
+  padding: 0.5rem 0.9rem;
+  margin-top: auto;
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.btn-book {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.btn-book:hover {
+  background-color: #4338ca;
+  transform: scale(1.05);
+}
+
+.btn-pay {
+  background-color: #16a34a;
+  color: #fff;
+  margin-right: 0.4rem;
+}
+
+.btn-pay:hover {
+  background-color: #15803d;
+  transform: scale(1.05);
+}
+
+.btn-cancel {
+  background-color: #dc2626;
+  color: #fff;
+}
+
+.btn-cancel:hover {
+  background-color: #b91c1c;
+  transform: scale(1.05);
+}
+
+.btn-group {
+  display: flex;
+  margin-top: auto;
+}
+
+.badge-paid {
+  margin-top: auto;
+  padding: 0.4rem 0.8rem;
+  background-color: #22c55e;
+  color: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.alert {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9rem;
+}
+
+.alert-success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.alert-error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+
+.event-card-modern {
+  padding: 20px;
+  border-radius: 15px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 4px 15px rgba(133, 128, 128, 0.2);
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.event-content {
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  padding: 15px;
+  border-radius: 10px;
+  color: #ffffff !important; /* force all text to white */
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); /* subtle shadow for clarity */
+}
+
+/* ✅ Also make sure all text elements inside inherit white */
+.event-content * {
+  color: #ffffff !important;
+}
+

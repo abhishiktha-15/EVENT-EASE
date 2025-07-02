@@ -1,0 +1,60 @@
+/* Full page background handled via inline style in JS */
+
+.glass-box {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  border-radius: 16px;
+  padding: 40px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient text for Register heading */
+.glass-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffffff, #03c8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+.register-form input::placeholder {
+  color: #555;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #2c5282;
+}
+
+.message {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
